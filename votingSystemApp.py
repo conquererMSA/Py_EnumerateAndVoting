@@ -42,8 +42,9 @@ while True:
                     candidate2Vote+=1
                     votter.remove(votterId)
                     vottedId.append(votterId)
-        elif votterId not in votter:
-            print('You are not a votter!')
         elif votterId in vottedId:
             print('You already votted!')
+        elif votterId not in votter:
+            print('You are not a votter!')
+
 
